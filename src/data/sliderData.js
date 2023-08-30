@@ -1,40 +1,33 @@
-import waterDropImage from "../images/water-drop.jpg";
-import stoneLake from "../images/stone-lake.jpg";
-import stoneForest from "../images/stone-forest.jpg";
-import stoneBeach from "../images/stone-beach.jpg";
-import stoneBeach2 from "../images/stone-beach2.jpg";
-import incenseStick from "../images/incense-stick.jpg";
-
 const sliderData = [
   {
     id: 1,
     description: "water drop",
-    content: waterDropImage,
+    content: "/images/water-drop.jpg",
   },
   {
     id: 2,
     description: "stone lake",
-    content: stoneLake,
+    content: "/images/stone-lake.jpg",
   },
   {
     id: 3,
     description: "stone forest",
-    content: stoneForest,
+    content: "/images/stone-forest.jpg",
   },
   {
     id: 4,
     description: "stone beach",
-    content: stoneBeach,
+    content: "/images/stone-beach.jpg",
   },
   {
     id: 5,
     description: "stone beach 2",
-    content: stoneBeach2,
+    content: "/images/stone-beach2.jpg",
   },
   {
     id: 6,
     description: "incense stick",
-    content: incenseStick,
+    content: "/images/incense-stick.jpg",
   },
 ];
 export default sliderData;
