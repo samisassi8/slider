@@ -1,33 +1,40 @@
+import waterDropImage from "../images/water-drop.jpg";
+import stoneLake from "../images/stone-lake.jpg";
+import stoneForest from "../images/stone-forest.jpg";
+import stoneBeach from "../images/stone-beach.jpg";
+import stoneBeach2 from "../images/stone-beach2.jpg";
+import incenseStick from "../images/incense-stick.jpg";
+
 const sliderData = [
   {
     id: 1,
     description: "water drop",
-    content: "../../public/images/water-drop.jpg",
+    content: waterDropImage,
   },
   {
     id: 2,
     description: "stone lake",
-    content: "../../public/images/stone-lake.jpg",
+    content: stoneLake,
   },
   {
     id: 3,
     description: "stone forest",
-    content: "../../public/images/stone-forest.jpg",
+    content: stoneForest,
   },
   {
     id: 4,
     description: "stone beach",
-    content: "../../public/images/stone-beach.jpg",
+    content: stoneBeach,
   },
   {
     id: 5,
     description: "stone beach 2",
-    content: "../../public/images/stone-beach2.jpg",
+    content: stoneBeach2,
   },
   {
     id: 6,
     description: "incense stick",
-    content: "../../public/images/incense-stick.jpg",
+    content: incenseStick,
   },
 ];
 export default sliderData;

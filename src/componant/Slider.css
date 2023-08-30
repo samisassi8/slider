@@ -1,39 +1,3 @@
-/* .container {
-  width: 37em;
-  height: auto;
-  margin: 5em auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.slider {
-  display: flex;
-}
-
-span {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  color: #fff;
-}
-
-img {
-  width: 100%;
-}
-
-.chevron {
-  width: 1.87em;
-  margin: 1.5em;
-}
-
-.slider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2em 1em;
-} */
-
 .index-info {
   text-align: center;
   color: #fff;
@@ -43,7 +7,7 @@ img {
 }
 
 .slider {
-  max-width: 600px;
+  max-width: 1000px;
   aspect-ratio: 3/2;
   margin: 0 auto;
   position: relative;
