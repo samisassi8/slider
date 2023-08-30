@@ -44,8 +44,8 @@ export default function Slider() {
           {sliderData.find((obj) => obj.id === sliderIndex).description}
         </p>
         <img
-          src={sliderData.find((obj) => obj.id === sliderIndex).content}
-          alt="incense stick"
+          src={`/images/img-${sliderIndex}.jpg`}
+          alt="water drop"
           className="slider-img"
         />
         <button
