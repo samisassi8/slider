@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import sliderData from "../data/sliderData";
+import leftChevron from "../assets/left-arrow.svg";
+import rightChevron from "../assets/right-arrow.svg";
 import "./Slider.css";
-import leftArrow from "../assets/left-arrow.svg";
-import rightArrow from "../assets/right-arrow.svg";
+import sliderData from "../data/sliderData";
 
 export default function Slider() {
-  const [sliderIndex, setSliderindex] = useState(1);
+  const [sliderIndex, setSliderIndex] = useState(1);
 
   function toggleImage(indexPayload) {
     // let newState;
@@ -16,9 +16,9 @@ export default function Slider() {
     // } else {
     //   newState = indexPayload + sliderIndex;
     // }
-    // setSliderindex(newState);
+    // setSliderIndex(newState);
 
-    setSliderindex((state) => {
+    setSliderIndex((state) => {
       if (indexPayload + state > sliderData.length) {
         return 1;
       } else if (indexPayload + state < 1) {
@@ -30,7 +30,8 @@ export default function Slider() {
   }
 
   useEffect(() => {
-    const intervalID = setInterval(() => toggleImage(1), 3000);
+    const intervalID = setInterval(() => toggleImage(1), 2000);
+
     return () => clearInterval(intervalID);
   }, []);
 
@@ -45,7 +46,7 @@ export default function Slider() {
         </p>
         <img
           src={`/images/img-${sliderIndex}.jpg`}
-          alt="water drop"
+          alt="estate's rooms"
           className="slider-img"
         />
         <button
@@ -53,13 +54,13 @@ export default function Slider() {
           onClick={() => toggleImage(-1)}
           className="navigation-button prev-button"
         >
-          <img src={leftArrow} alt="previous image" />
+          <img src={leftChevron} alt="previous image" />
         </button>
         <button
           onClick={() => toggleImage(1)}
           className="navigation-button next-button"
         >
-          <img src={rightArrow} alt="next image" />
+          <img src={rightChevron} alt="next image" />
         </button>
       </div>
     </>
