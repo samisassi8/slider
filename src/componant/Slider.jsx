@@ -46,7 +46,7 @@ export default function Slider() {
         </p>
         {console.log("sliderIndex:", sliderIndex)}
         <img
-          src={`https://samisassi8.github.io/slider//images/img-${sliderIndex}.jpg`}
+          src={`https://samisassi8.github.io/slider/images/img-${sliderIndex}.jpg`}
           alt="estate's rooms"
           className="slider-img"
         />
